@@ -131,15 +131,15 @@
 		5B2130EF1C746CC30072FA95 /* APAlbumCovers */ = {
 			isa = PBXGroup;
 			children = (
+				5B21312B1C74C2B20072FA95 /* Controller */,
+				5B21312A1C74C2A80072FA95 /* Model */,
+				5B2131291C74C2A00072FA95 /* View */,
 				5B2131201C7474B40072FA95 /* API */,
 				5B2130F01C746CC30072FA95 /* AppDelegate.swift */,
-				5B2130F21C746CC30072FA95 /* ViewController.swift */,
 				5B2130F41C746CC30072FA95 /* Main.storyboard */,
 				5B2130F71C746CC30072FA95 /* Assets.xcassets */,
 				5B2130F91C746CC30072FA95 /* LaunchScreen.storyboard */,
 				5B2130FC1C746CC30072FA95 /* Info.plist */,
-				5B2131251C74B93A0072FA95 /* Album.swift */,
-				5B2131271C74BA380072FA95 /* AlbumView.swift */,
 			);
 			path = APAlbumCovers;
 			sourceTree = "<group>";
@@ -168,6 +168,30 @@
 				5B2131211C7475120072FA95 /* HTTPClient.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		5B2131291C74C2A00072FA95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B2131271C74BA380072FA95 /* AlbumView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5B21312A1C74C2A80072FA95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B2131251C74B93A0072FA95 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5B21312B1C74C2B20072FA95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B2130F21C746CC30072FA95 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
