@@ -15,6 +15,7 @@
 		5B2131061C746CC30072FA95 /* APAlbumCoversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2131051C746CC30072FA95 /* APAlbumCoversTests.swift */; };
 		5B2131111C746CC30072FA95 /* APAlbumCoversUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2131101C746CC30072FA95 /* APAlbumCoversUITests.swift */; };
 		5B21311F1C74728F0072FA95 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B21311E1C74728F0072FA95 /* XCGLogger.framework */; };
+		5B2131221C7475120072FA95 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2131211C7475120072FA95 /* HTTPClient.swift */; };
 		B55E06613CE3E5A76AE8DB7E /* Pods_APAlbumCovers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E183CA7F84054D7CE16CB399 /* Pods_APAlbumCovers.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		5B2131101C746CC30072FA95 /* APAlbumCoversUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APAlbumCoversUITests.swift; sourceTree = "<group>"; };
 		5B2131121C746CC30072FA95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B21311E1C74728F0072FA95 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = "Pods/../build/Debug-iphoneos/XCGLogger.framework"; sourceTree = "<group>"; };
+		5B2131211C7475120072FA95 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		D23A0A8C585FA7DB06DDDF7E /* Pods-APAlbumCovers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APAlbumCovers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APAlbumCovers/Pods-APAlbumCovers.debug.xcconfig"; sourceTree = "<group>"; };
 		E183CA7F84054D7CE16CB399 /* Pods_APAlbumCovers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APAlbumCovers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 		5B2130EF1C746CC30072FA95 /* APAlbumCovers */ = {
 			isa = PBXGroup;
 			children = (
+				5B2131201C7474B40072FA95 /* API */,
 				5B2130F01C746CC30072FA95 /* AppDelegate.swift */,
 				5B2130F21C746CC30072FA95 /* ViewController.swift */,
 				5B2130F41C746CC30072FA95 /* Main.storyboard */,
@@ -151,6 +154,14 @@
 				5B2131121C746CC30072FA95 /* Info.plist */,
 			);
 			path = APAlbumCoversUITests;
+			sourceTree = "<group>";
+		};
+		5B2131201C7474B40072FA95 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5B2131211C7475120072FA95 /* HTTPClient.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 			files = (
 				5B2130F31C746CC30072FA95 /* ViewController.swift in Sources */,
 				5B2130F11C746CC30072FA95 /* AppDelegate.swift in Sources */,
+				5B2131221C7475120072FA95 /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
