@@ -71,4 +71,42 @@ class PersistencyManager: NSObject {
         
     }
     
+    func saveImage(image: UIImage, filename: String) {
+        
+        log.debug("Started!")
+        
+        let path = NSHomeDirectory().stringByAppendingString("/Documents/\(filename)")
+        let data = UIImagePNGRepresentation(image)
+        data!.writeToFile(path, atomically: true)
+        
+        log.debug("Finished!")
+        
+    }
+    
+    func getImage(filename: String) -> UIImage? {
+        
+        log.debug("Started!")
+        
+        let path = NSHomeDirectory().stringByAppendingString("/Documents/\(filename)")
+        
+        do {
+            
+            let data = try NSData(contentsOfFile: path, options: .UncachedRead)
+            
+            log.debug("Finished!")
+            return UIImage(data: data)
+            
+            
+        } catch {
+            
+            log.error("Error encountered whilst trying to download Image!\nError: \(error)")
+            
+            log.debug("Finished!")
+            return nil
+            
+        }
+
+        
+    }
+    
 }

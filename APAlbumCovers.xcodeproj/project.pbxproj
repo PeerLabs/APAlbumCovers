@@ -21,6 +21,7 @@
 		5B21312D1C74C61A0072FA95 /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21312C1C74C61A0072FA95 /* LibraryAPI.swift */; };
 		5B2131311C74C7960072FA95 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2131301C74C7960072FA95 /* PersistencyManager.swift */; };
 		5B2131331C7585360072FA95 /* AlbumExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2131321C7585360072FA95 /* AlbumExtensions.swift */; };
+		5B2131351C758A4F0072FA95 /* HorizontalScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2131341C758A4F0072FA95 /* HorizontalScroller.swift */; };
 		B55E06613CE3E5A76AE8DB7E /* Pods_APAlbumCovers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E183CA7F84054D7CE16CB399 /* Pods_APAlbumCovers.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,10 +60,11 @@
 		5B21311E1C74728F0072FA95 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = "Pods/../build/Debug-iphoneos/XCGLogger.framework"; sourceTree = "<group>"; };
 		5B2131211C7475120072FA95 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		5B2131251C74B93A0072FA95 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		5B2131271C74BA380072FA95 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumView.swift; path = ../AlbumView.swift; sourceTree = "<group>"; };
+		5B2131271C74BA380072FA95 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		5B21312C1C74C61A0072FA95 /* LibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
 		5B2131301C74C7960072FA95 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		5B2131321C7585360072FA95 /* AlbumExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumExtensions.swift; sourceTree = "<group>"; };
+		5B2131341C758A4F0072FA95 /* HorizontalScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScroller.swift; sourceTree = "<group>"; };
 		D23A0A8C585FA7DB06DDDF7E /* Pods-APAlbumCovers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APAlbumCovers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APAlbumCovers/Pods-APAlbumCovers.debug.xcconfig"; sourceTree = "<group>"; };
 		E183CA7F84054D7CE16CB399 /* Pods_APAlbumCovers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APAlbumCovers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				5B2131271C74BA380072FA95 /* AlbumView.swift */,
+				5B2131341C758A4F0072FA95 /* HorizontalScroller.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				5B2131331C7585360072FA95 /* AlbumExtensions.swift in Sources */,
 				5B2130F11C746CC30072FA95 /* AppDelegate.swift in Sources */,
 				5B21312D1C74C61A0072FA95 /* LibraryAPI.swift in Sources */,
+				5B2131351C758A4F0072FA95 /* HorizontalScroller.swift in Sources */,
 				5B2131221C7475120072FA95 /* HTTPClient.swift in Sources */,
 				5B2131281C74BA380072FA95 /* AlbumView.swift in Sources */,
 				5B2131261C74B93A0072FA95 /* Album.swift in Sources */,

@@ -15,14 +15,13 @@ class AlbumView: UIView {
     
     private var indicator: UIActivityIndicatorView!
     
-    
     required init?(coder aDecoder: NSCoder) {
         
         log.debug("Started!")
         
         super.init(coder: aDecoder)
     
-        initialize()
+        initializeAlbumView()
         
         log.debug("Finished!")
         
@@ -35,19 +34,23 @@ class AlbumView: UIView {
         
         super.init(frame: frame)
         
-        initialize()
+        initializeAlbumView()
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("APAlbumDownloadImageNotification", object: self, userInfo: ["imageView":coverImage, "coverUrl" : albumCover])
         
         log.debug("Finished!")
         
     }
     
-    func initialize() {
+    func initializeAlbumView() {
         
         log.debug("Started!")
         
         backgroundColor = UIColor.blackColor()
         coverImage = UIImageView(frame: CGRect(x: 5, y: 5, width: frame.size.width - 10, height: frame.size.height - 10))
         addSubview(coverImage)
+        coverImage.addObserver(self, forKeyPath: "image", options: .New, context: nil)
+        
         indicator = UIActivityIndicatorView()
         indicator.center = center
         indicator.activityIndicatorViewStyle = .WhiteLarge
@@ -56,6 +59,16 @@ class AlbumView: UIView {
         
         log.debug("Finished!")
         
+    }
+    
+    deinit {
+        
+        log.debug("Started!")
+        
+        log.debug("Finished!")
+        
+        coverImage.removeObserver(self, forKeyPath: "image")
+    
     }
     
     func highlightAlbum(didHighlightView: Bool) {
@@ -73,7 +86,19 @@ class AlbumView: UIView {
         }
         
         log.debug("Finished!")
+        
     }
     
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        
+        log.debug("Started!")
+        
+        if keyPath == "image" {
+            indicator.stopAnimating()
+        }
+        
+        log.debug("Finished!")
+        
+    }
     
 }
